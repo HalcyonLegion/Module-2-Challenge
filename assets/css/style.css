@@ -21,3 +21,19 @@ h6 {
 p {
   margin: 0;
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgrey;
+}
+
+li {
+  list-style: none;
+  text-decoration: underline;
+  display: inline;
+  padding-right: 10px;
+  margin-right: 20px;
+}
