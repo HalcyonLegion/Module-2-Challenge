@@ -27,7 +27,18 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: darkgrey;
+  background-color: rgb(37, 37, 37);
+  padding: 10px 0px 10px 0px;
+}
+
+h1 {
+  background-color: cadetblue;
+  color: rgb(37, 37, 37);
+  padding: 0px 10px 0px 100px;
+}
+
+ul {
+  margin-right: 50px;
 }
 
 li {
@@ -35,5 +46,40 @@ li {
   text-decoration: underline;
   display: inline;
   padding-right: 10px;
-  margin-right: 20px;
+  font-weight: bold;
+  color: cadetblue;
+  font-size: 20px;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  background-image: url(../images/02-hero-bg.jpg);
+  height: 400px;
+}
+
+.subtitle {
+  background-color: cadetblue;
+  color: beige;
+  margin: 30px 50px 30px 30px;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+}
+
+#about h2 {
+  font-size: 50px;
+  border-right: 3px solid black;
+}
+
+#about p {
+  font-size: 15px;
 }
