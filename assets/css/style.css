@@ -37,6 +37,13 @@ h1 {
   padding: 0px 10px 0px 100px;
 }
 
+h2 {
+  font-size: 50px;
+  border-right: 3px solid black;
+  padding: 0px 10px 0 100px;
+  width: 300px;
+}
+
 ul {
   margin-right: 50px;
 }
@@ -59,27 +66,35 @@ li {
   height: 400px;
 }
 
-.subtitle {
-  background-color: cadetblue;
-  color: beige;
-  margin: 30px 50px 30px 30px;
-}
-
 .page-wrapper {
   display: flex;
   flex-direction: column;
+  height: 800px;
+  justify-content: space-around;
 }
 
-#about {
+.page-section {
   display: flex;
-  align-items: center;
 }
 
-#about h2 {
-  font-size: 50px;
-  border-right: 3px solid black;
+#subtitle {
+  font-size: 25px;
+  background-color: cadetblue;
+  color: rgb(37, 37, 37);
+  margin: 30px 50px 30px 30px;
+  border-style: none;
+  padding: 0;
+  width: auto;
 }
 
-#about p {
+#about > p {
+  display: flex;
   font-size: 15px;
+  justify-content: center;
+  align-items:flex-start;
+  padding: 0px 10px 0 30px;
+}
+
+.contact {
+  align-items: center;
 }
