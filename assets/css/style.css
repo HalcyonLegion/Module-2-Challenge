@@ -64,7 +64,7 @@ li {
   display: inline;
   padding-right: 60px;
   font-weight: bold;
-  color: cadetblue;
+  color: var(--cadetblue);
   font-size: 20px;
 }
 
