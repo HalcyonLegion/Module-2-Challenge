@@ -52,10 +52,15 @@ li {
   list-style: none;
   text-decoration: underline;
   display: inline;
-  padding-right: 10px;
+  padding-right: 60px;
   font-weight: bold;
   color: cadetblue;
   font-size: 20px;
+}
+
+a:visited {
+  text-decoration: none;
+  color: cadetblue;;
 }
 
 .hero-banner {
@@ -63,13 +68,14 @@ li {
   flex-direction: column-reverse;
   align-items: flex-end;
   background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
   height: 400px;
 }
 
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  height: 800px;
+  height: 1200px;
   justify-content: space-around;
 }
 
@@ -95,6 +101,67 @@ li {
   padding: 0px 10px 0 30px;
 }
 
-.contact {
+
+#workGrid {
+  margin: -200px 0 5% 25%;
+  display: grid;
+  height: 500px;
+  width: 800px;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 450px 450px;
+  grid-template-areas:
+  "surfreport surfreport"
+  "ledwall calculator"
+  "pastelpuzzels runbuddy"
+  ;
+}
+
+#surf {
+  grid-area: surfreport;
+  background-image: url("../images/02-portfolio-4.jpg");
+
+}
+#ledWall {
+  grid-area: ledwall;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#calculator {
+  grid-area: calculator;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#pastelPuzzels {
+  grid-area: pastelpuzzels;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#runBuddy {
+  grid-area: runbuddy;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.workGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.contact > ul {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: 0 0 0 200px;
+}
+
+.heading, span {
+  background-color: rgba(0,0,0,0.7);
+  padding: 1px;
+  height: 25px;
+  color: white;
+  font-size: 15px;
 }
