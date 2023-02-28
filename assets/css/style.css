@@ -1,3 +1,8 @@
+:root {
+  --cadetblue: cadetblue;
+  --darkgrey: rgb(37, 37, 37);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -27,12 +32,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(37, 37, 37);
+  background-color: var(--darkgrey);
   padding: 10px 0px 10px 0px;
 }
 
 h1 {
-  background-color: cadetblue;
+  background-color: var(--cadetblue);
   color: rgb(37, 37, 37);
   padding: 0px 10px 0px 100px;
 }
@@ -42,6 +47,11 @@ h2 {
   border-right: 3px solid black;
   padding: 0px 10px 0 100px;
   width: 300px;
+  color: var(--darkgrey);
+}
+
+h2 p {
+  color: var(--darkgrey);
 }
 
 ul {
@@ -60,7 +70,7 @@ li {
 
 a:visited {
   text-decoration: none;
-  color: cadetblue;;
+  color: var(--cadetblue);
 }
 
 .hero-banner {
@@ -85,8 +95,8 @@ a:visited {
 
 #subtitle {
   font-size: 25px;
-  background-color: cadetblue;
-  color: rgb(37, 37, 37);
+  background-color: var(--cadetblue);
+  color: var(--darkgrey);
   margin: 30px 50px 30px 30px;
   border-style: none;
   padding: 0;
