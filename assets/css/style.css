@@ -180,3 +180,34 @@ a:visited {
   color: white;
   font-size: 15px;
 }
+
+
+@media only screen and (max-width: 1000px) {
+  #halcyonic {
+    display: none;
+  }
+  .nav {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  h1 {
+    position: static;
+    margin: 20px;
+  }
+  h2 {
+    display: none;
+  }
+  #workGrid {
+    grid-template-rows: 100px;
+    grid-template-columns: 500px;
+    grid-template-areas:
+      "surfreport"
+      "ledwall"
+      "calculator"
+      "pastelpuzzels"
+      "runbuddy"
+    ;
+  }
+}
